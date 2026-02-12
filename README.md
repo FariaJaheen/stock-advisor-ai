@@ -51,6 +51,30 @@ Synthesizes research findings and selects the most promising investment candidat
 
 ---
 
+## Memory Architecture 
+
+The system includes:
+<br>
+- Short-Term Memory<br>
+Stores recent conversation and reasoning context for current execution cycles.<br>
+- Long-Term Memory<br>
+Persists historical insights and decisions across runs using SQLite storage.<br>
+- Entity Memory<br>
+Tracks companies, entities, and contextual references across research sessions.<br>
+- RAG Storage with Embeddings<br>
+Uses OpenAI embeddings to enable semantic recall and contextual retrieval of past research and decisions.
+
+---
+
+## Benefits of Memory Integration
+- Prevents duplicate company selection across runs
+- Maintains research continuity across sessions
+- Enables contextual reasoning using past insights
+- Improves decision consistency over time
+- Supports long-horizon autonomous research workflows
+
+---
+
 ## Workflow
 
 1. **Trending Discovery**  
@@ -62,10 +86,13 @@ Synthesizes research findings and selects the most promising investment candidat
 3. **Investment Selection**  
    The stock picker evaluates research outputs and selects the strongest candidate.
 
-4. **User Notification**  
+4. **Memory Storage**  
    A push notification is sent to the user with the selected company and key rationale.
 
-5. **Detailed Report Generation**  
+5. **User Notification**  
+   Research insights and decisions are stored in long-term and RAG memory for future reasoning.
+
+6. **Detailed Report Generation**  
    A comprehensive decision report is produced and stored.
 
 ---
@@ -74,9 +101,12 @@ Synthesizes research findings and selects the most promising investment candidat
 
 - Python 3.10+
 - CrewAI (multi-agent orchestration framework)
+- CrewAI Memory & RAG Storage
 - CrewAI Tools (search and external integrations)
 - Serper API (financial/news search)
+- OpenAI API (LLM + embeddings)
 - Pydantic (structured outputs and validation)
+- SQLite (long-term memory storage)
 - Pushover API (real-time notifications)
 
 ---
