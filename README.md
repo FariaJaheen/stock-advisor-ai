@@ -135,7 +135,8 @@ crewai run
 AI Researcher & Engineer specializing in next-generation intelligent systems.
 
 **Specializing in:**
-	-	Multi-agent AI systems
-	-	Generative AI engineering
-	-	Autonomous software systems
-	-	Intelligent developer tooling
+<br>
+	-	Multi-agent AI systems<br>
+	-	Generative AI engineering<br>
+	-	Autonomous software systems<br>
+	-	Intelligent developer tooling<br>
