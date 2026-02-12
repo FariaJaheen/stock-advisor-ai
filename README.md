@@ -26,6 +26,7 @@ This repository showcases the design and implementation of autonomous financial 
 
 ### Agent Hierarchy
 The system is organized using a hierarchical coordination model in which a manager agent orchestrates task delegation and workflow execution.
+```
 Manager Agent (Coordinator)
 │
 ├── Trending Company Finder (News Intelligence)
@@ -33,23 +34,20 @@ Manager Agent (Coordinator)
 ├── Financial Researcher (Deep Company Analysis)
 │       ↓
 └── Stock Picker (Investment Decision + Notification)
-
+```
 ### Agent Roles
 
 #### Manager
 Coordinates the workflow, delegates tasks across agents, and ensures that the system produces a coherent and logically consistent investment decision.
 
 #### Trending Company Finder
-Identifies trending companies within a specified sector by analyzing recent financial and market news.  
-Ensures discovery of new and relevant companies for further evaluation.
+Identifies trending companies within a specified sector by analyzing recent financial and market news. Ensures discovery of new and relevant companies for further evaluation.
 
 #### Financial Researcher
-Performs comprehensive financial and strategic analysis of trending companies.  
-Produces structured insights on market position, competitive landscape, growth outlook, and investment potential.
+Performs comprehensive financial and strategic analysis of trending companies. Produces structured insights on market position, competitive landscape, growth outlook, and investment potential.
 
 #### Stock Picker
-Synthesizes research findings and selects the most promising investment candidate.  
-Generates a final investment rationale and sends a real-time notification to the user.
+Synthesizes research findings and selects the most promising investment candidate. Generates a final investment rationale and sends a real-time notification to the user.
 
 ---
 
@@ -84,6 +82,7 @@ Generates a final investment rationale and sends a real-time notification to the
 ---
 
 ## Project Structure
+```
 stock_advisor/
 │
 ├── src/stock_advisor/
@@ -99,7 +98,7 @@ stock_advisor/
 ├── .env                       # API keys and environment variables
 ├── pyproject.toml             # Project configuration
 └── README.md
-
+```
 ---
 
 ## Installation
@@ -111,31 +110,32 @@ Install dependencies using UV or pip:
 ```bash
 pip install uv
 uv sync
-
+```
 ---
 
-## Environment Variables
+## **Environment Variables**
 
-OPENAI_API_KEY=your_openai_key
-SERPER_API_KEY=your_serper_key
-PUSHOVER_USER=your_pushover_user
-PUSHOVER_TOKEN=your_pushover_token
+OPENAI_API_KEY=your_openai_key<br>
+SERPER_API_KEY=your_serper_key<br>
+PUSHOVER_USER=your_pushover_user<br>
+PUSHOVER_TOKEN=your_pushover_token<br>
 
 ---
 
 ## Running the System
-Execute the multi-agent workflow:
+Execute the multi-agent workflow:<br>
+```
 crewai run
-
+```
 ---
 
 ## Author
 
-Faria Jaheen, PhD.
-AI Researcher
+**Faria Jaheen, PhD.**  
+AI Researcher & Engineer specializing in next-generation intelligent systems.
 
-Specializing in:
-	•	Multi-agent AI systems
-	•	Generative AI engineering
-	•	Autonomous software systems
-	•	Intelligent developer tooling
+**Specializing in:**
+	-	Multi-agent AI systems
+	-	Generative AI engineering
+	-	Autonomous software systems
+	-	Intelligent developer tooling
