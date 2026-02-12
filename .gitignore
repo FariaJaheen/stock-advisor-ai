@@ -16,3 +16,9 @@ output/
 
 # Mac
 .DS_Store
+
+memory/
+*.db
+.env
+.venv/
+output/
