@@ -1,12 +1,7 @@
 # AI Multi-Agent Stock Intelligence & Investment Research System
 
 ## Overview
-This project implements a hierarchical multi-agent artificial intelligence system for automated financial research and investment intelligence using the CrewAI framework.  
-The system identifies trending companies in the financial news, performs structured financial research, and produces an informed investment recommendation supported by analysis and real-time notification capabilities.
-
-It demonstrates a production-oriented agent architecture that integrates information retrieval, reasoning, decision synthesis, and automated user communication within a coordinated multi-agent workflow.
-
-This repository showcases the design and implementation of autonomous financial research agents capable of collaborating to support data-driven investment exploration.
+This project implements a hierarchical multi-agent artificial intelligence system for automated financial research and investment intelligence using the CrewAI framework. The system identifies trending companies in the financial news, performs structured financial research, and produces an informed investment recommendation supported by analysis and real-time notification capabilities. It demonstrates a production-oriented agent architecture that integrates information retrieval, reasoning, decision synthesis, and automated user communication within a coordinated multi-agent workflow. This repository showcases the design and implementation of autonomous financial research agents capable of collaborating to support data-driven investment exploration.
 
 ---
 
